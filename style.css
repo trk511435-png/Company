@@ -27,6 +27,11 @@ body {
     padding: 32px 24px;
     text-align: center;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
 }
 
 h1 {
@@ -39,6 +44,52 @@ h1 {
     color: #94a3b8;
     font-size: 0.95rem;
     margin-bottom: 24px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    color: #f1f5f9;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #38bdf8;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #0ea5e9;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1px solid #334155;
+    color: #94a3b8;
+    margin-top: 20px;
+}
+
+.secondary-btn:hover {
+    background-color: #334155;
+    color: #f8fafc;
 }
 
 .name-display {
