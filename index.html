@@ -8,10 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <!-- شاشة إدخال الاسم -->
+        <div id="input-card" class="card">
             <h1>أهلاً بك</h1>
-            <p class="subtitle">اسمك المسجل في النظام هو:</p>
-            <div id="name-box" class="name-display">جاري التعرف على الاسم...</div>
+            <p class="subtitle">فضلاً، اكتب اسمك لنبدأ:</p>
+            <form id="name-form">
+                <input type="text" id="name-input" placeholder="اكتب اسمك هنا..." required autocomplete="off">
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+
+        <!-- شاشة عرض النتيجة (مخفية بالبداية) -->
+        <div id="result-card" class="card hidden">
+            <h1>مرحباً بك</h1>
+            <p class="subtitle">اسمك هو:</p>
+            <div id="name-box" class="name-display"></div>
+            <button id="reset-btn" class="btn secondary-btn">تغيير الاسم</button>
         </div>
     </div>
     <script src="script.js"></script>
